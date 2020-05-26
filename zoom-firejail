@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+thisDir=${0%/*}
+thisDir=$(realpath "$thisDir")
+firejailprofile=${firejailprofile:-$thisDir/zoom.profile}
+cmd=( "$HOME/zoom/ZoomLauncher" "$@" )
+
+if [[ "$1" == "--shell" ]] ; then
+    cmd=( "$SHELL" )
+fi
+
+# the actual wrapper around zoom
+exec firejail --quiet \
+    --profile="$firejailprofile" \
+    --private=$HOME/.zoom-home \
+    -- "${cmd[@]}"
