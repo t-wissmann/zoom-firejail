@@ -33,7 +33,7 @@ noroot
 notv
 # the following protocoll restriction breaks a lot:
 # 1. the profile picture isn't loaded
-# 2. hte login and recent meetings aren't remembered
+# 2. the login and recent meetings aren't remembered
 # 3. the 'new meeting' button does nothing.
 #protocol unix,inet,inet6
 
