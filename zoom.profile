@@ -12,7 +12,7 @@ noblacklist ${HOME}/.zoom
 noblacklist ${HOME}/.mozilla
 noblacklist ${HOME}/.cache/mozilla
 
-include disable-common.inc
+# include disable-common.inc # hopefully not needed because we have 'private' later anyway
 include disable-devel.inc
 include disable-interpreters.inc
 include disable-programs.inc
@@ -42,3 +42,4 @@ notv
 #seccomp
 
 private-tmp
+private ## very important! you can override it with --private=... on the command line
