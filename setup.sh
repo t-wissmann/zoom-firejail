@@ -21,8 +21,8 @@ desktop-entry() {
 echo "Creating Desktop Entry for \"$1\"..." >&2
 cat <<EOF
 [Desktop Entry]
-Name=Zoom
-Comment=Zoom Video Conference
+Name=Zoom in Firejail
+Comment=Zoom Video Conference in Firejail Sandbox
 Exec=$1 %U
 Icon=Zoom
 Terminal=false
