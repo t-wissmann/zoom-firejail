@@ -9,6 +9,7 @@ if [[ "$1" == "--shell" ]] ; then
     cmd=( "$SHELL" )
 fi
 
+
 # the actual wrapper around zoom
 exec firejail --quiet \
     --profile="$firejailprofile" \

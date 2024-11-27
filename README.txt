@@ -22,7 +22,7 @@ Installation
 ------------
 Requirements: +firejail+
 
-To install it under the current user, run
+To install or update zoom as the current user, run
 
     ./setup.sh
 
